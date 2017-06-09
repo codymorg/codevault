@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 7be135ccd53c16146adaa64589132868
+timeCreated: 1456106588
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nanoforge-meters-ui_0
+    21300002: nanoforge-meters-ui_1
+    21300004: nanoforge-meters-ui_2
+    21300006: nanoforge-meters-ui_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nanoforge-meters-ui_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: 58}
+        - {x: 72, y: 87}
+        - {x: 45, y: 106}
+        - {x: -47, y: 106}
+        - {x: -65, y: 91}
+        - {x: -92, y: 68}
+        - {x: -106, y: 34}
+        - {x: -106, y: -37}
+        - {x: -89, y: -74}
+        - {x: -56, y: -98}
+        - {x: -40, y: -106}
+        - {x: 41, y: -106}
+        - {x: 50, y: -105}
+        - {x: 95, y: -65}
+        - {x: 106, y: -44}
+        - {x: 106, y: 37}
+    - name: nanoforge-meters-ui_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: 58}
+        - {x: 72, y: 87}
+        - {x: 45, y: 106}
+        - {x: -47, y: 106}
+        - {x: -65, y: 91}
+        - {x: -92, y: 68}
+        - {x: -106, y: 34}
+        - {x: -106, y: -37}
+        - {x: -89, y: -74}
+        - {x: -56, y: -98}
+        - {x: -40, y: -106}
+        - {x: 41, y: -106}
+        - {x: 50, y: -105}
+        - {x: 95, y: -65}
+        - {x: 106, y: -44}
+        - {x: 106, y: 37}
+    - name: nanoforge-meters-ui_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 103, y: 58}
+        - {x: 72, y: 87}
+        - {x: 45, y: 106}
+        - {x: -47, y: 106}
+        - {x: -65, y: 91}
+        - {x: -92, y: 68}
+        - {x: -106, y: 34}
+        - {x: -106, y: -37}
+        - {x: -89, y: -74}
+        - {x: -56, y: -98}
+        - {x: -40, y: -106}
+        - {x: 41, y: -106}
+        - {x: 50, y: -105}
+        - {x: 95, y: -65}
+        - {x: 106, y: -44}
+        - {x: 106, y: 37}
+    - name: nanoforge-meters-ui_3
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 2
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 61}
+        - {x: 65, y: 94}
+        - {x: 32, y: 106}
+        - {x: -36, y: 106}
+        - {x: -68, y: 91}
+        - {x: -96, y: 58}
+        - {x: -106, y: 33}
+        - {x: -106, y: -36}
+        - {x: -95, y: -66}
+        - {x: -46, y: -106}
+        - {x: 37, y: -106}
+        - {x: 76, y: -89}
+        - {x: 106, y: -40}
+        - {x: 106, y: 32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
