@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ProjectEuler/.vs/ProjectEuler/v16
+/ProjectEuler/ProjectEuler/obj/Debug
+/ProjectEuler/ProjectEuler/obj/Release
+/ProjectLeetEuler/.vs/ProjectEulerCPP/v16
