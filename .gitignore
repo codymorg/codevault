@@ -7,3 +7,10 @@
 /ProjectEuler/ProjectEuler/obj/Debug
 /ProjectEuler/ProjectEuler/obj/Release
 /ProjectLeetEuler/.vs/ProjectEulerCPP/v16
+*.tlog
+*.exe
+*.ilk
+*.log
+*.obj
+*.enc
+*.idb
