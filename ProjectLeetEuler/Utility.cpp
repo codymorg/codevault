@@ -30,7 +30,13 @@ void StopWatch::end()
 
 unsigned StopWatch::getMilliseconds()
 {
-  return unsigned(std::chrono::duration_cast<std::chrono::microseconds>(end_ - start_).count());
+  return unsigned(std::chrono::duration_cast<std::chrono::milliseconds>(end_ - start_).count());
+}
+
+unsigned StopWatch::getMicroseconds()
+{
+  return unsigned(std::chrono::duration_cast<std::chrono::microseconds> (end_ - start_).count());
+
 }
 
 unsigned StopWatch::getSeconds()
@@ -52,10 +58,12 @@ void StopWatch::printElapsed(StopWatch::PrintMode mode)
     break;
 
   default:
-    if(getSeconds() > 0)
-      cout << getSeconds() << " sec\n";
+    if (getSeconds() > 0)
+      cout << getSeconds() << " seconds\n";
+    else if (getMilliseconds() > 0)
+      cout << getMilliseconds() << " milliseconds\n";
     else
-      cout << getMilliseconds() << " ms\n";
+      cout << getMicroseconds() << " microseconds\n";
     break;
   }
 }

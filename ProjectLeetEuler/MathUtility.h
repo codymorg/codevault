@@ -17,13 +17,13 @@
 
 ******************************************************************************/
 template <class IntegralType>
-std::vector<IntegralType> PrimeSieve(IntegralType a)
+std::vector<IntegralType> PrimeSieve(IntegralType T)
 {
   std::vector<IntegralType> primes;
-  bool* sieve = new bool[a];
+  bool* sieve = new bool[T];
 
   // save the next prime
-  for (IntegralType prime = 2; prime < a / 2; prime++)
+  for (IntegralType prime = 2; prime < T / 2; prime++)
   {
     // we can skip this number as it has already be evaluated to be not prime
     if (sieve[prime] == false)
@@ -32,7 +32,7 @@ std::vector<IntegralType> PrimeSieve(IntegralType a)
     primes.push_back(prime);
 
     // stamp each multiple of this prime number
-    for (IntegralType multiple = prime; multiple < a; multiple += prime)
+    for (IntegralType multiple = prime; multiple < T; multiple += prime)
     {
       sieve[multiple] = false;
     }
@@ -42,6 +42,7 @@ std::vector<IntegralType> PrimeSieve(IntegralType a)
 
   return primes;
 }
+
 
 /******************************************************************************
   tells you if this number is prime 
@@ -59,5 +60,6 @@ bool IsPrime(IntrgralType a)
 
   return true;
 }
+
 
 #endif

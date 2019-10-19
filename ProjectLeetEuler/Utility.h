@@ -25,8 +25,9 @@ public:
   StopWatch();
   void start();
   void end();
-  unsigned getMilliseconds();
   unsigned getSeconds();
+  unsigned getMilliseconds();
+  unsigned getMicroseconds();
   void printElapsed(PrintMode mode = PrintMode::PrintDefault);
 private:
   std::chrono::time_point<std::chrono::steady_clock> start_;
@@ -36,27 +37,13 @@ private:
 namespace StringManipulation
 {
   template <class charArray>
-  bool IsPalindrome(const charArray& input)
+  bool IsPalindrome(const charArray& input, unsigned size)
   {
-    unsigned size;
-
-    // get size from char* or string
-    if(dynamic_cast<std::string>(input))
-      size = unsigned(input.size());
-    else
+    // ignore the null terminator
+    size--;
+    for (unsigned i = 0; i < size / 2; i++)
     {
-      for (unsigned i : input)
-      {
-        if (input[i] != '\0')
-          size++;
-        else
-          break;
-      }
-    }
-
-    for (unsigned i : input)
-    {
-      if (input[i] != input[size - 1])
+      if (input[i] != input[size - 1 - i])
         return false;
     }
 
