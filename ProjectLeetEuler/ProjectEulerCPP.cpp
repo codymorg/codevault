@@ -41,9 +41,17 @@ void All()
 
 int main(int argc, const char* argv[])
 {
-  if(argv[1][0] == '/')
+  if (argc == 1)
+    Help();
+  else if(argv[1][0] == '/')
   {
-    switch (argv[1][1])
+    // force to lower
+    char command = argv[1][1];
+    if (command < 'a' && command >= 'A')
+      command += 'a';
+
+    // run whatever commands
+    switch (command)
     {
     case 'a':
       All();

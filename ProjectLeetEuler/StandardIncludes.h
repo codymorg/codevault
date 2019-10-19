@@ -7,15 +7,6 @@
 ******************************************************************************/
 
 #pragma once
-/******************************************************************************
-  * Project Euler Solutions
-  * Author : Cody Morgan
-  * Brief  : contains utility funstions for doing problems these are generic
-  *          functions that just didn't fit in their own files
-
-******************************************************************************/
-
-#pragma once
 #ifndef STAND_INC_H
 #define STAND_INC_H
 
@@ -24,6 +15,9 @@ using std::cout;
 
 #include <vector>
 using std::vector;
+
+#include<string>
+using std::string;
 
 #include <cmath>
 using std::sqrt;

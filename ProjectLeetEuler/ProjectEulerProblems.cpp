@@ -9,9 +9,10 @@
 
 ******************************************************************************/
 
+#include "StandardIncludes.h"
 #include "ProjectEulerProblems.h"
 #include "Utility.h"
-#include "StandardIncludes.h"
+#include "MathUtility.h"
 
 
 
@@ -63,13 +64,36 @@ namespace ProjectEulerProblems
     cout << "what is the largest prime factor of 600851475143?\n";
 
     long long number = 600851475143;
-    long largestFactor = long(sqrt(number));
+    long largestFactor = long(sqrt(number));         // there's no factor greater than the sqrt of a number
+    vector<long> primes = PrimeSieve(largestFactor); // get all primes that might be factors
 
-    while (!isPrime)
+    // check each prime to see if it's a factor
+    for (long i = long(primes.size()) - 1; i >= 0; i--)
     {
-
+      if (number % primes[i] == 0)
+      {
+        largestFactor = primes[i];
+        break;
+      }
     }
 
+    cout << "answer: " << largestFactor << "\n";
+  }
+
+  void Euler4()
+  {
+    cout << "Find the largest palindrome made from the product of two 3-digit numbers.\n";
+
+    char* palindrome[6]; // no 3 digit multiplication is greater than 6 digits
+
+    for (unsigned factor1 = 100; factor1 < 999; factor1++)
+    {
+      for (unsigned factor2 = 100; factor2 < 999; factor2++)
+      {
+        itoa(factor1 * factor2, *palindrome, 10);
+        
+      }
+    }
   }
 }
 
@@ -83,6 +107,7 @@ namespace ProjectEulerProblems
     Euler1,
     Euler2,
     Euler3,
+    Euler4,
 
   };
 
@@ -106,6 +131,6 @@ namespace ProjectEulerProblems
 
   unsigned GetTotalSolved()
   {
-    return solutions.size();
+    return unsigned(solutions.size());
   }
 }

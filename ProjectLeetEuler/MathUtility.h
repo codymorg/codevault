@@ -11,14 +11,53 @@
 
 #include <vector>
 
+/******************************************************************************
+  gets all primes under a given amount
+  slower than IsPrime for one prime, but faster for multiple primes
+
+******************************************************************************/
 template <class IntegralType>
-bool IsPrime(IntegralType a)
+std::vector<IntegralType> PrimeSieve(IntegralType a)
 {
   std::vector<IntegralType> primes;
-  for (IntegralType i = 2; i < a; i++)
-  {
+  bool* sieve = new bool[a];
 
+  // save the next prime
+  for (IntegralType prime = 2; prime < a / 2; prime++)
+  {
+    // we can skip this number as it has already be evaluated to be not prime
+    if (sieve[prime] == false)
+      continue;
+
+    primes.push_back(prime);
+
+    // stamp each multiple of this prime number
+    for (IntegralType multiple = prime; multiple < a; multiple += prime)
+    {
+      sieve[multiple] = false;
+    }
   }
+
+  delete[] sieve;
+
+  return primes;
+}
+
+/******************************************************************************
+  tells you if this number is prime 
+  faster than Sieve for checking a single prime - not many
+
+******************************************************************************/
+template <class IntrgralType>
+bool IsPrime(IntrgralType a)
+{
+  for (IntrgralType i = 2; i < a; i++)
+  {
+    if (a % i == 0)
+      return false;
+  }
+
+  return true;
 }
 
 #endif

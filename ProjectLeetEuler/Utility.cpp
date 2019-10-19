@@ -7,8 +7,13 @@
 ******************************************************************************/
 
 #include "Utility.h"
+using std::string;
+
 #include <iostream>
 using std::cout;
+
+
+//***** Stopwatch Class *****//
 
 StopWatch::StopWatch()
 {}
@@ -40,12 +45,10 @@ void StopWatch::printElapsed(StopWatch::PrintMode mode)
   {
   case StopWatch::PrintMode::PrintMilliSeconds:
     cout << getMilliseconds() << " ms\n";
-
     break;
 
   case StopWatch::PrintMode::PrintSeconds:
     cout << getSeconds() << " sec\n";
-
     break;
 
   default:
@@ -53,7 +56,11 @@ void StopWatch::printElapsed(StopWatch::PrintMode mode)
       cout << getSeconds() << " sec\n";
     else
       cout << getMilliseconds() << " ms\n";
-
     break;
   }
 }
+
+
+//***** String Manipulation *****//
+
+
