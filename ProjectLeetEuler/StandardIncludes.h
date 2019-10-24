@@ -22,4 +22,6 @@ using std::string;
 #include <cmath>
 using std::sqrt;
 
+#include <exception>
+
 #endif

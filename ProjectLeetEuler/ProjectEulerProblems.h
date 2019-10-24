@@ -15,5 +15,11 @@ namespace ProjectEulerProblems
   void RunEulerSolution(unsigned number); 
   unsigned GetTotalSolved(); 
 };
+
+// these are functions that are probably too specific to be used for other problems
+namespace HelperFunctions
+{
+
+}
 #endif
 
